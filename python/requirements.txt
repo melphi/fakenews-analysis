@@ -1,0 +1,5 @@
+bs4
+google_cloud
+pymongo
+requests
+textract

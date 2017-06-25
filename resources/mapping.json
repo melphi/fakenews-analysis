@@ -1,0 +1,113 @@
+{
+  "mappings": {
+    "news": {
+      "properties": {
+        "authors": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "domain": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "entities": {
+          "properties": {
+            "name": {
+              "type": "text",
+              "analyzer": "english",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "salience": {
+              "type": "float",
+              "include_in_all": false
+            },
+            "type": {
+              "type": "keyword",
+              "include_in_all": false
+            },
+            "wikipedia_url": {
+              "type": "keyword",
+              "include_in_all": false
+            }
+          }
+        },
+        "error_class": {
+          "type": "text",
+          "index": "no",
+          "doc_values": false
+        },
+        "error_message": {
+          "type": "text",
+          "index": "no",
+          "doc_values": false
+        },
+        "extractor": {
+          "type": "keyword",
+          "include_in_all": false
+        },
+        "full_url": {
+          "type": "keyword",
+          "include_in_all": false
+        },
+        "id": {
+          "type": "keyword",
+          "include_in_all": false
+        },
+        "language": {
+          "type": "keyword",
+          "include_in_all": false
+        },
+        "newsletter_date": {
+          "type": "date",
+          "include_in_all": false
+        },
+        "sentiment_magnitude": {
+          "type": "float",
+          "include_in_all": false
+        },
+        "sentiment_score": {
+          "type": "long",
+          "include_in_all": false
+        },
+        "short_url": {
+          "type": "keyword",
+          "include_in_all": false
+        },
+        "skip": {
+          "type": "boolean",
+          "include_in_all": false
+        },
+        "text_analysed": {
+          "type": "boolean",
+          "include_in_all": false
+        },
+        "text_en": {
+          "type": "text",
+          "analyzer": "english"
+        },
+        "text_original": {
+          "type": "text"
+        },
+        "translator": {
+          "type": "keyword",
+          "include_in_all": false
+        }
+      }
+    }
+  }
+}

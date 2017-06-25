@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  elastic:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.3.0
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=127.0.0.1
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - 9200:9200
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:5.3.0
+    depends_on:
+      - elastic
+    environment:
+      - ELASTICSEARCH_URL=http://elastic:9200
+    ports:
+      - 5601:5601
+
