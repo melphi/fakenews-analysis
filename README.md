@@ -14,7 +14,7 @@ With machine learning services it was possible to automatically extract:
 * relevant terms (entity name recognition)
 * sentiment
 
-## Content
+## Folders content
 * Python: the python scripts to scrape, process and load the news
 * Dataset: the news scraped and processed, exported as json text files
 * Resources: the newsletters downloaded from euvsdisinfo.eu
