@@ -1,5 +1,5 @@
 # Fakenews dataset analysis
-Machine learning on a fake news data set. More information [Machine Learning analysis of a fake news dataset.](http://www.robertomarchetto.com/machine_learning_fake_news_dataset)
+Machine learning on a fake news data set. More information [Analysis of a FakeNews dataset with Machine Learning.](http://www.robertomarchetto.com/fake_news_dataset_analysis_with_machine_learning)
 
 ## Sample
 Here is a sample of the dashboard.
