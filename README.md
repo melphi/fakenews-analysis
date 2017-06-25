@@ -3,6 +3,7 @@ Machine learning on a fake news data set. More information [Machine Learning ana
 
 ## Sample
 Here is a sample of the dashboard.
+
 ![fake news analysis dashboard](http://www.robertomarchetto.com/images/fake_news/machine_learning_fake_news_analysis.png)
 
 With machine learning services it was possible to automatically extract:
